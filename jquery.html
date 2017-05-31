@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("form").hide();
+    });
+    $("#show").click(function(){
+        $("form").show();
+    });
+});
+</script>
+</head>
+<body>
+
+<form name='demo_form'>
+First name: <input type="text" name="fname"><br>
+Last name: <input type="text" name="lname"><br>
+<input type="submit" value="Submit">
+</form> 
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
